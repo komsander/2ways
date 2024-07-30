@@ -12,8 +12,8 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="header">
@@ -21,6 +21,12 @@
         <a href="index.html" class="logo">
           <img src="images/logo-svg.svg" alt="logo" class="logo-img" />
         </a>
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
@@ -43,8 +49,8 @@
             </li>
           </ul>
         </nav>
-        <a href="tel:+79841794149"class="phone">
-            <svg
+        <a href="tel:+79841794149" class="phone">
+          <svg
             width="26"
             height="26"
             viewBox="0 0 26 26"
@@ -58,47 +64,54 @@
         </a>
       </div>
     </header>
+
     <main>
-      <div class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <div class="hero__image-1"></div>
           <div class="hero__spot-blue"></div>
           <div class="hero__image-2"></div>
           <div class="hero__spot-yellow"></div>
 
-          <h1 class="hero__title ">мы <br />научим!</h1>
-          <h2 class="hero__subtitle animate__animated animate__fadeInUp animate__slower">
+          <h1 class="hero__title">мы <br />научим!</h1>
+          <h2
+            class="hero__subtitle animate__animated animate__fadeInUp animate__slower"
+          >
             АНГЛИЙСКОМУ И <br />
             ФРАНЦУЗСКОМУ ЯЗЫКАМ
           </h2>
-          <a href="https://forms.gle/4h4e4AvpJg4Pk9JZ9" class="btn hero__btn animate__animated animate__fadeInUp animate__delay-2s animate__slow"><span>записаться</span></a>
+          <a
+            href="https://forms.gle/4h4e4AvpJg4Pk9JZ9"
+            class="btn hero__btn animate__animated animate__fadeInUp animate__delay-2s animate__slow"
+            ><span>записаться</span></a
+          >
         </div>
-        
-      </div>
+      </section>
+
       <section class="about" id="about">
         <div class="about__decor waves-decor"></div>
         <div class="about__container">
           <h3 class="about__title h3">О НАС</h3>
-          <!-- Slider main container -->
+
           <div class="swiper about__swiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper about__slide-wrapper">
               <div class="swiper-slide about__slide">
                 <div class="about__card">
                   <div class="about__text">
                     <p>
-                      <b>2WAYS</b> в дословном переводе с английского на русский
-                      означает «2 пути» или «2 способа», что отражает суть
-                      нашего проекта: 2 разных учителя обучают 2 иностранным
-                      языкам. У вас есть возможность выбрать как иностранный
-                      язык для изучения (английский или французский), так и
-                      учителя, который будет помогать вам в его изучении.
+                      <b>2WAYS</b> в&nbsp;дословном переводе с&nbsp;английского
+                      на&nbsp;русский означает &laquo;2&nbsp;пути&raquo; или
+                      &laquo;2&nbsp;способа&raquo;, что отражает суть нашего
+                      проекта: 2&nbsp;разных учителя обучают 2&nbsp;иностранным
+                      языкам. У&nbsp;вас есть возможность выбрать как
+                      иностранный язык для изучения (английский или
+                      французский), так и учителя, который будет помогать вам
+                      в&nbsp;его изучении.
                     </p>
                   </div>
-                  <img
-                    src="images/about/order.jpg"
-                    alt="image"
-                    class="about__img"
-                  />
+                  <div class="about__img">
+                    <img src="images/about/order.jpg" alt="image" />
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide about__slide">
@@ -108,22 +121,21 @@
                       Ученик как центр выстраивания курсa
                     </h4>
                     <p>
-                      Каждый ученик уникален - у каждого свои интересы, цели,
-                      потребности и предпочтения в обучении, которые влияют на
-                      мотивацию и вовлеченность на занятиях. В <b>2WAYS</b> мы
-                      понимаем, как это важно, и уделяем этим факторам особое
-                      внимание при построении индивидуального учебного курса. Мы
-                      подбираем наиболее эффективные формы работы, учебные
-                      пособия, задания и дополнительные материалы с учётом
-                      предпочтений и пожеланий ученика для достижения его целей
-                      в изучении иностранного языка.
+                      Каждый ученик уникален&nbsp;&mdash; у&nbsp;каждого свои
+                      интересы, цели, потребности и&nbsp;предпочтения
+                      в&nbsp;обучении, которые влияют на мотивацию
+                      и&nbsp;вовлеченность на&nbsp;занятиях. В&nbsp;<b>2WAYS</b>
+                      мы понимаем, как это важно, и&nbsp;уделяем этим факторам
+                      особое внимание при построении индивидуального учебного
+                      курса. Мы подбираем наиболее эффективные формы работы,
+                      учебные пособия, задания и&nbsp;дополнительные материалы
+                      с&nbsp;учётом предпочтений и&nbsp;пожеланий ученика для
+                      достижения его целей в&nbsp;изучении иностранного языка.
                     </p>
                   </div>
-                  <img
-                    src="images/about/center_study.JPG"
-                    alt="image"
-                    class="about__img"
-                  />
+                  <div class="about__img">
+                    <img src="images/about/center_study.JPG" alt="image" />
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide about__slide">
@@ -131,23 +143,27 @@
                   <div class="about__text">
                     <h4 class="about__card-title">Комфортная среда обучения</h4>
                     <p>
-                      Мы убеждены, что обучение в комфортных условиях влияет на
-                      качество обучения, и создаём удобную среду для изучения
-                      иностранных языков в <b>2WAYS</b>. Выбирая оффлайн, ученик
-                      занимается в нашем уютном кабинете, оформленном специально
-                      для обучения иностранным языкам, мы предоставляем все
-                      учебные материалы, пособия для работы на уроке, игры и
-                      многое другое. Выбирая онлайн, ученик занимается на
-                      удобной и красочной платформе с интерактивными заданиями
-                      по выбранному иностранному языку. Все учебные материалы в
-                      этом случае предоставляются в электронном виде.
+                      Мы&nbsp;убеждены, что обучение в&nbsp;комфортных условиях
+                      влияет на качество обучения, и&nbsp;создаём удобную среду
+                      для изучения иностранных языков в&nbsp;<b>2WAYS</b>.
+                      Выбирая оффлайн, ученик занимается в&nbsp;нашем уютном
+                      кабинете, оформленном специально для обучения иностранным
+                      языкам, мы&nbsp;предоставляем все учебные материалы,
+                      пособия для работы на&nbsp;уроке, игры и многое другое.
+                      Выбирая онлайн, ученик занимается на удобной
+                      и&nbsp;красочной платформе с&nbsp;интерактивными заданиями
+                      по&nbsp;выбранному иностранному языку. Все учебные
+                      материалы в этом случае предоставляются в&nbsp;электронном
+                      виде.
                     </p>
                   </div>
-                  <img
-                    src="images/about/comfortable_space.jpeg"
-                    alt="image"
-                    class="about__img"
-                  />
+                  <div class="about__img">
+                    <img
+                      src="images/about/comfortable_space.jpeg"
+                      alt="image"
+                      class="about__img"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide about__slide">
@@ -170,11 +186,13 @@
                       относительно процесса обучения.
                     </p>
                   </div>
-                  <img
-                    src="images/about/feedback.jpg"
-                    alt="image"
-                    class="about__img"
-                  />
+                  <div class="about__img">
+                    <img
+                      src="images/about/feedback.jpg"
+                      alt="image"
+                      class="about__img"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide about__slide">
@@ -184,21 +202,25 @@
                       Больше, чем просто занятия
                     </h4>
                     <p>
-                      <b>2WAYS</b> - это про 2 учителей иностранных языков,
-                      по-настоящему влюблённых в своё дело. Мы прислушиваемся и
-                      уделяем внимание каждому ученику, стараемся делать
-                      изучение иностранного языка доступным, интересным и
-                      увлекательным. Мы заинтересованы в индивидуальном успехе
-                      абсолютно каждого и вкладываем в это частичку себя,
-                      начиная с индивидуальных особенностей оформления кабинета
-                      и заканчивая выбором средств обучения.
+                      <b>2WAYS</b>&nbsp;&mdash; это про 2-х учителей
+                      иностранных языков, по-настоящему влюблённых в&nbsp;своё
+                      дело. Мы&nbsp;прислушиваемся и уделяем внимание каждому
+                      ученику, стараемся делать изучение иностранного языка
+                      доступным, интересным и увлекательным.
+                      Мы&nbsp;заинтересованы в&nbsp;индивидуальном успехе
+                      абсолютно каждого и&nbsp;вкладываем в&nbsp;это частичку
+                      себя, начиная с&nbsp;индивидуальных особенностей
+                      оформления кабинета и&nbsp;заканчивая выбором средств
+                      обучения.
                     </p>
                   </div>
-                  <img
-                    src="images/about/more-than-lessons.jpg"
-                    alt="image"
-                    class="about__img"
-                  />
+                  <div class="about__img">
+                    <img
+                      src="images/about/more-than-lessons.jpg"
+                      alt="image"
+                      class="about__img"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -207,6 +229,7 @@
           </div>
         </div>
       </section>
+       
       <section class="courses" id="courses">
         <div class="courses__mask"></div>
         <div class="courses__right hidden"></div>
@@ -216,14 +239,15 @@
           <h3 class="courses__title h3">Курсы</h3>
         </div>
       </section>
+     
       <section class="teachers" id="teachers">
         <div class="teachers__decor waves-decor"></div>
         <div class="container teachers__container">
           <h3 class="teachers__title h3">наши преподаватели</h3>
           <div class="teachers__cards">
-            <div class="teachers__cards-item  animate__animated wow animate__fadeInLeft" data-wow-duration="2s">
+            <div class="teachers__cards-item  animate__animated wow animate__fadeInLeft" data-i="v"data-wow-duration="2s">
               <img src="images/nast-v.png" alt="" class="teachers__photo " />
-              <div class="teachers__about yellow">
+              <div class="teachers__about yellow" data-teach="v">
                 <p class="teachers__name">
                   <span>Вакуленко</span> <br />
                   Анастасия Андреевна
@@ -236,7 +260,7 @@
                   узнать больше
                 </button>
 
-                <div class="teachers__content-yellow teachers__content" id="v">
+                <div class="teachers__content-yellow teachers__content " id="v">
                   <div class="teachers__close"></div>
                   <div class="teachers__content-inner">
                     <div class='swiper teachers__swiper'>
@@ -275,7 +299,7 @@
                 </div>
               </div>
             </div>
-            <div class="teachers__cards-item animate__animated wow animate__fadeInRight" data-wow-duration="2s">
+            <div class="teachers__cards-item animate__animated wow animate__fadeInRight" data-i="ch"data-wow-duration="2s">
               <img src="images/nast-ch.png" alt="" class="teachers__photo" />
               <div class="teachers__about blue">
                 <p class="teachers__name">
@@ -367,6 +391,8 @@
                   <cite class="reviews__cite">Полина</cite>
                 </div>
               </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
               <div class="reviews__card">
                 <img
                   src="images/reviews/stars.png"
@@ -381,6 +407,9 @@
                   <cite class="reviews__cite">Кристина Калинникова</cite>
                 </div>
               </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
+
               <div class="reviews__card">
                 <img
                   src="images/reviews/stars.png"
@@ -411,6 +440,8 @@
                   <cite class="reviews__cite">Полина Бондаренко</cite>
                 </div>
               </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
               <div class="reviews__card">
                 <img
                   src="images/reviews/stars.png"
@@ -424,6 +455,8 @@
                   <cite class="reviews__cite">Лиза Кузнецова</cite>
                 </div>
               </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
               <div class="reviews__card">
                 <img
                   src="images/reviews/stars.png"
@@ -452,6 +485,8 @@
                   <cite class="reviews__cite">Евгений Мещеряков</cite>
                 </div>
               </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
               <div class="reviews__card">
                 <img
                   src="images/reviews/stars.png"
@@ -469,10 +504,13 @@
             </div>
 
           </div>
+
           <div class="swiper-pagination reviews__pagination"></div>
         </div>
-        <a href="https://go.2gis.com/mb77i" class="reviews__btn btn ">оставить <br> отзыв</a>
+        <a href="https://go.2gis.com/mb77i" class="reviews__btn btn ">оставить  отзыв</a>
       </section>
+
+
       <section class="contacts" id="contacts">
         <div class="contacts__decor waves-decor"></div>
         <h3 class="contacts__title h3">контакты</h3>
@@ -526,14 +564,16 @@
             </ul>
           </div>
           <div class="contacts__img-box">
-            <img src="images/contacts/contact-img.jpg" alt="image" class="contact__img">
+            <!-- <img src="images/contacts/contact-img.jpg" alt="image" class="contact__img"> -->
           </div>
         </div>
       </section>
       <div class="contact__map">
         <iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&indoorLevel=1&ll=135.084145%2C48.490926&mode=whatshere&whatshere%5Bpoint%5D=135.084472%2C48.490753&whatshere%5Bzoom%5D=17&z=17" width="1980" height="200" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
       </div>
+      
     </main>
+   
     <footer class="footer ">
       <div class="container footer__container">
         <div class="footer__top">
@@ -558,19 +598,19 @@
             </ul>
             <ul class="footer-menu">
               <li class="footer-menu__item">
-                <a href="#news" class="footer-menu__link">Новости</a>
+                <a href="news.html" class="footer-menu__link">Новости</a>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Акции</a>
+                <a href="news.html" class="footer-menu__link">Акции</a>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Прайс</a>
+                <a href="news.html" class="footer-menu__link">Прайс</a>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Галерея</a>
+                <a href="news.html" class="footer-menu__link">Галерея</a>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Ресурсы</a>
+                <a href="news.html" class="footer-menu__link">Ресурсы</a>
               </li>
             </ul>
           </nav>
