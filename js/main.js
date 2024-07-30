@@ -1,9 +1,49 @@
+// header
+const burger = document.querySelector(".menu-icon");
+const menu = document.querySelector(".menu");
+const menuLink = document.querySelector(".menu__list-link");
+const body = document.body;
+if (burger && menu) {
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    menu.classList.toggle("active");
+    body.classList.toggle("lock");
+  });
+  menuLink.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    menu.classList.toggle("active");
+    body.classList.toggle("lock");
+  });
+}
+
 // ========about===========
 let swiper = new Swiper(".about__swiper", {
   speed: 1300,
+  spaceBetween: 460,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".about__arrow-right",
     prevEl: ".about__arrow-left",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 6,
+      direction: "vertical",
+      enabled: false,
+    },
+    480: {
+      // loop: true,
+
+      slidesPerView: 1,
+      direction: "horizontal",
+      enabled: true,
+    },
+    800: {
+      loop: false,
+    },
   },
 });
 
@@ -46,12 +86,11 @@ course.addEventListener("mousemove", (event) => {
     // courseRight.classList.remove("hidden");
     fadeIn(courseRight, 700);
     courseTitle.classList.add("color-gray");
-    
   } else if (elementX < viewportWidth / 2 - 100) {
     // courseMask.classList.add("hidden");
     fadeOut(courseMask, 700);
     courseTitle.classList.remove("color-gray");
-    
+
     // courseRight.classList.add("hidden");
   } else {
     // courseMask.classList.remove("hidden");
@@ -59,7 +98,6 @@ course.addEventListener("mousemove", (event) => {
     // courseRight.classList.add("hidden");
     fadeOut(courseRight, 700);
     courseTitle.classList.remove("color-gray");
-    
   }
 });
 
@@ -84,6 +122,12 @@ for (let item of teachersBtn) {
 
 let teachersSwiper = new Swiper(".teachers__swiper", {
   speed: 1300,
+  loop: true,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
+
   effect: "fade",
   navigation: {
     nextEl: ".teachers__arrow-right",
@@ -94,7 +138,8 @@ let teachersSwiper = new Swiper(".teachers__swiper", {
 // ==========revievs===========
 let reviewsSwiper = new Swiper(".reviews__swiper", {
   speed: 2600,
-  loop: true,
+  // slidesPerView: 3,
+  // loop: true,
   autoplay: {
     delay: 5500,
     disableOnInteraction: false,
@@ -103,6 +148,19 @@ let reviewsSwiper = new Swiper(".reviews__swiper", {
   pagination: {
     el: ".reviews__pagination",
     clickable: true,
+  },
+  breakpoints: {
+    300: {
+      spaceBetween: 20,
+      slidesPerView: 1,
+    },
+    800: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+      loop: false,
+    },
   },
 });
 
