@@ -18,7 +18,7 @@ if (burger && menu) {
 
 // ========about===========
 let swiper = new Swiper(".about__swiper", {
-  speed: 1300,
+  speed: 2500,
   spaceBetween: 460,
   autoplay: {
     delay: 5500,
@@ -42,7 +42,7 @@ let swiper = new Swiper(".about__swiper", {
       enabled: true,
     },
     800: {
-      loop: false,
+      loop: true,
     },
   },
 });
@@ -102,6 +102,8 @@ course.addEventListener("mousemove", (event) => {
 });
 
 // =========teachers=======
+
+const modal = new GraphModal();
 
 const teachersBtn = document.querySelectorAll(".teachers__btn");
 const about = document.querySelectorAll(".teachers__content");
