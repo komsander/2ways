@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/graph-modal.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -241,6 +242,101 @@
       </section>
      
       <section class="teachers" id="teachers">
+        <!-- модальное окно -->
+        <div class="graph-modal">
+          <div class="graph-modal__container hero__modal" role="dialog" aria-modal="true" data-graph-target="one-v">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content ">
+              <!-- контент модального окна -->
+         
+
+              <div class="teachers__img-modal-box"> 
+                <img src="images/teachers/V-eng-diplom.png" alt="" class="teachers__img-modal">
+              </div>
+              
+            </div>
+          </div>
+          <div class="graph-modal__container hero__modal" role="dialog" aria-modal="true" data-graph-target="two-v">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content ">
+              <!-- контент модального окна -->
+            
+              <div class="teachers__img-modal-box"> 
+                <img src="images/teachers/V-svidetelstvo.png" alt="" class="teachers__img-modal">
+              </div>
+              
+            </div>
+          </div>
+          <div class="graph-modal__container hero__modal" role="dialog" aria-modal="true" data-graph-target="three-v">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content ">
+              <!-- контент модального окна -->
+
+              <div class="teachers__img-modal-box"> 
+                <img src="images/teachers/student.png" alt="" class="teachers__img-modal">
+              </div>
+              
+            </div>
+          </div>
+          <div class="graph-modal__container hero__modal" role="dialog" aria-modal="true" data-graph-target="one-ch">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content ">
+              <!-- контент модального окна -->
+
+              <div class="teachers__img-modal-box"> 
+                <img src="images/teachers/Ch-degree.png" alt="" class="teachers__img-modal">
+              </div>
+              
+            </div>
+          </div>
+          <div class="graph-modal__container hero__modal" role="dialog" aria-modal="true" data-graph-target="two-ch">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content ">
+              <!-- контент модального окна -->
+
+              <div class="teachers__img-modal-box"> 
+                <img src="images/teachers/IELTS-C1.jpg" alt="" class="teachers__img-modal">
+              </div>
+              
+            </div>
+          </div>
+          <div class="graph-modal__container hero__modal" role="dialog" aria-modal="true" data-graph-target="three-ch">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content ">
+              <!-- контент модального окна -->
+
+              <div class="teachers__img-modal-box"> 
+                <img src="images/teachers/focsford-2.png" alt="" class="teachers__img-modal">
+              </div>
+            </div>
+          </div>
+          <div class="graph-modal__container hero__modal" role="dialog" aria-modal="true" data-graph-target="four-ch">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content ">
+              <!-- контент модального окна -->
+              <div class="teachers__img-modal-box"> 
+                <img src="images/teachers/france.jpg" alt="" class="teachers__img-modal">
+              </div>
+
+              
+            </div>
+          </div>
+          <div class="graph-modal__container hero__modal" role="dialog" aria-modal="true" data-graph-target="five-ch">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content ">
+              <!-- контент модального окна -->
+              <div class="teachers__img-modal-box">
+                <img src="images/teachers/foxford-group.png" alt="" class="teachers__img-modal">
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+        <!-- конец модального окна -->
+
+
+
         <div class="teachers__decor waves-decor"></div>
         <div class="container teachers__container">
           <h3 class="teachers__title h3">наши преподаватели</h3>
@@ -266,22 +362,24 @@
                     <div class='swiper teachers__swiper'>
                       <div class='swiper-wrapper'>
                         <div class='swiper-slide teachers__slide'  >
+                         
+
+                            <img src="images/teachers/V-eng-diplom.png" alt="image" class="teachers__slide-img" data-graph-path="one-v" data-graph-speed="700">
                           
-                          <img src="images/teachers/V-eng-diplom.png" alt="image" class="teachers__slide-img">
                           <p class="teachers__text">Анастасия Андреевна&nbsp;&mdash; учитель английского языка, педагог с&nbsp;высшим педагогическим образованием, а&nbsp;также с&nbsp;международным сертификатом, который подтверждает продвинутый уровень владения английским языком&nbsp;&mdash; С1&nbsp;Advanced (Канада, Global Village, Toronto) . 
                             
                           </p>
                         </div>
                         <div class='swiper-slide teachers__slide'>
                           
-                            <img src="images/teachers/V-svidetelstvo.png" alt="image" class="teachers__slide-img">
+                            <img src="images/teachers/V-svidetelstvo.png" alt="image" class="teachers__slide-img" data-graph-path="two-v" data-graph-speed="700">
                           
                           <p class="teachers__text">
                             Опыт работы учителем английского языка в&nbsp;государственных и&nbsp;частных школах&nbsp;&mdash; более 5&nbsp;лет. Анастасия Андреевна специализируется на&nbsp;работе как с&nbsp;детьми дошкольного возраста, так и&nbsp;с&nbsp;учащимися 1-11&nbsp;классов.
                           </p>
                         </div>
                         <div class='swiper-slide teachers__slide'>
-                          <img src="images/teachers/student.png" alt="image" class="teachers__slide-img">
+                          <img src="images/teachers/student.png" alt="image" class="teachers__slide-img" data-graph-path="three-v" data-graph-speed="700" >
                           <p class="teachers__text">
                             Ученики Анастасии Андреевны являются неоднократными призерами и&nbsp;победителями олимпиад школьного и&nbsp;международного уровней.
                           </p>
@@ -321,33 +419,33 @@
                       <div class='swiper-wrapper'>
                         <div class='swiper-slide teachers__slide' data-i="ch">
                           
-                          <img src="images/teachers/Ch-degree.png" alt="image" class="teachers__slide-img">
+                          <img src="images/teachers/Ch-degree.png" alt="image" class="teachers__slide-img" data-graph-path="one-ch" data-graph-speed="700">
                           <p class="teachers__text">Анастасия Александровна&nbsp;&mdash; учитель иностранных языков, лингвист, специалист в&nbsp;области межкультурной коммуникации с&nbsp;опытом преподавания более 5&nbsp;лет.
                             
                           </p>
                         </div>
                         <div class='swiper-slide teachers__slide' data-i="ch">
                           
-                            <img src="images/teachers/IELTS-C1.jpg" alt="image" class="teachers__slide-img">
+                            <img src="images/teachers/IELTS-C1.jpg" alt="image" class="teachers__slide-img" data-graph-path="two-ch" data-graph-speed="700">
                           
                           <p class="teachers__text">
                             Педагог с&nbsp;высшим педагогическим и&nbsp;лингвистическим образованием (дипломы с&nbsp;отличием) и&nbsp;международным сертификатом IELTS Academic, подтверждающим продвинутый уровень владения английским языком&nbsp;&mdash; C1&nbsp;Advanced.
                           </p>
                         </div>
                         <div class='swiper-slide teachers__slide' data-i="ch">
-                          <img src="images/teachers/focsford-2.png" alt="image" class="teachers__slide-img">
+                          <img src="images/teachers/focsford-2.png" alt="image" class="teachers__slide-img" data-graph-path="three-ch" data-graph-speed="700">
                           <p class="teachers__text">
                             В&nbsp;рамках английского языка Анастасия Александровна специализируется на&nbsp;подготовке учащихся 8-11 классов к&nbsp;сдаче экзаменов&nbsp;&mdash; ежегодно её&nbsp;ученики успешно сдают ОГЭ и&nbsp;ЕГЭ по&nbsp;английскому языку и&nbsp;поступают в&nbsp;желаемые учебные заведения.
                           </p>
                         </div>
                         <div class='swiper-slide teachers__slide' data-i="ch">
-                          <img src="images/teachers/france.jpg" alt="image" class="teachers__slide-img">
+                          <img src="images/teachers/france.jpg" alt="image" class="teachers__slide-img" data-graph-path="four-ch" data-graph-speed="700">
                           <p class="teachers__text">
                             Являясь специалистом и&nbsp;в&nbsp;области французского языка (уровень B2&nbsp;&mdash; Ind&eacute;pendant), Анастасия Александровна преподает и&nbsp;французский для дошкольников и&nbsp;школьников, начинающих изучение французского как иностранного. Дети изучают основы французского языка через игровые и&nbsp;коммуникативные методики.
                           </p>
                         </div>
                         <div class='swiper-slide teachers__slide' data-i="ch">
-                          <img src="images/teachers/foxford-group.png" alt="image" class="teachers__slide-img">
+                          <img src="images/teachers/foxford-group.png" alt="image" class="teachers__slide-img" data-graph-path="five-ch" data-graph-speed="700">
                           <p class="teachers__text">
                             Педагог регулярно проходит курсы повышения квалификации и&nbsp;участвует в&nbsp;профессиональных олимпиадах для совершенствования процесса обучения.
                           </p>
@@ -625,6 +723,7 @@
     </footer>
 
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/graph-modal.min.js"></script>
 
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
