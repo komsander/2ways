@@ -607,19 +607,13 @@ body._lock {
 .teachers__slide-img {
   position: relative;
   z-index: 11;
-  max-width: 550px;
+  max-width: 100%;
   max-height: 95%;
   width: 100%;
   margin: 0 auto;
   padding-top: 0px;
   -o-object-fit: contain;
      object-fit: contain;
-  scale: 1;
-  transition: scale 0.5s;
-  cursor: zoom-in;
-}
-.teachers__slide-img:hover {
-  scale: 1.15;
 }
 .teachers__text {
   width: 50%;
@@ -629,6 +623,8 @@ body._lock {
   line-height: 1.2;
   text-indent: 30px;
   text-align: justify;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 .teachers__arrow-left {
   position: absolute;
@@ -654,6 +650,30 @@ body._lock {
 }
 .teachers__arrow-right:after, .teachers__arrow-left:after {
   content: "";
+}
+.teachers__img-modal-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+.teachers__img-modal {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.graph-modal__container {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 .reviews {
@@ -927,6 +947,7 @@ body._lock {
   display: flex;
   justify-content: space-between;
   font-size: 13px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .footer-menu__item + .footer-menu__item {
@@ -1071,6 +1092,12 @@ body._lock {
   .teachers__arrow-right, .teachers__arrow-left {
     display: none;
   }
+  .graph-modal__container {
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
   .contact__map iframe {
     width: 800px;
     height: 150px;
@@ -1081,6 +1108,9 @@ body._lock {
   .footer__nav {
     width: 100%;
     justify-content: center;
+  }
+  .footer-menu__item + .footer-menu__item {
+    padding-top: 18px;
   }
 }
 @media (max-width: 700px) {
@@ -1132,7 +1162,9 @@ body._lock {
 @media (max-width: 600px) {
   .teachers__slide {
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+    padding: 10px 30px;
+    justify-content: center;
   }
   .teachers__text {
     width: 90%;
@@ -1140,6 +1172,7 @@ body._lock {
   }
   .teachers__slide-img {
     height: 50%;
+    width: auto;
   }
   .reviews {
     padding-bottom: 120px;
@@ -1187,12 +1220,6 @@ body._lock {
     border-radius: 20px;
     height: auto;
   }
-  .teachers__slide-img:hover {
-    scale: 1;
-  }
-  .teachers__slide-img:active {
-    scale: 2;
-  }
   .contacts__img-box {
     display: none;
   }
@@ -1209,11 +1236,19 @@ body._lock {
   .footer__bottom {
     font-size: 11px;
   }
-  .footer-menu__item + .footer-menu__item {
-    padding-top: 18px;
-  }
 }
-@media (max-width: 414px) {
+@media (max-width: 415px) {
+  .hero__image-1, .hero__image-2 {
+    height: 130px;
+    top: auto;
+    bottom: 20px;
+  }
+  .hero__image-1 {
+    left: 60px;
+  }
+  .hero__image-2 {
+    right: 90px;
+  }
   .about__slide {
     max-height: 100px !important;
     height: 100%;
@@ -1240,11 +1275,15 @@ body._lock {
     box-sizing: content-box;
     font-size: 14px;
   }
+  .teachers__slide-img {
+    height: 45%;
+    width: auto;
+  }
   .contacts__container {
     gap: 10px;
   }
   .contacts__title {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
   .contacts__img-box {
     width: 80%;
@@ -1289,6 +1328,10 @@ body._lock {
   }
 }
 @media (max-width: 345px) {
+  .teachers__slide-img {
+    height: 40%;
+    width: auto;
+  }
   .teachers__content-yellow,
   .teachers__content-blue {
     height: 565px;
