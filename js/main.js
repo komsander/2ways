@@ -29,23 +29,6 @@ let swiper = new Swiper(".about__swiper", {
     nextEl: ".about__arrow-right",
     prevEl: ".about__arrow-left",
   },
-  // breakpoints: {
-  //   300: {
-  //     slidesPerView: 6,
-  //     direction: "vertical",
-  //     enabled: false,
-  //   },
-  //   480: {
-  //     // loop: true,
-
-  //     slidesPerView: 1,
-  //     direction: "horizontal",
-  //     enabled: true,
-  //   },
-  //   800: {
-  //     loop: true,
-  //   },
-  // },
 });
 
 // =========courses============
@@ -84,19 +67,19 @@ course.addEventListener("mousemove", (event) => {
   const elementX = event.offsetX;
 
   if (elementX > viewportWidth / 2 + 100) {
-    // courseRight.classList.remove("hidden");
+   
     fadeIn(courseRight, 700);
     courseTitle.classList.add("color-gray");
   } else if (elementX < viewportWidth / 2 - 100) {
-    // courseMask.classList.add("hidden");
+   
     fadeOut(courseMask, 700);
     courseTitle.classList.remove("color-gray");
 
-    // courseRight.classList.add("hidden");
+   
   } else {
-    // courseMask.classList.remove("hidden");
+    
     fadeIn(courseMask, 700);
-    // courseRight.classList.add("hidden");
+   
     fadeOut(courseRight, 700);
     courseTitle.classList.remove("color-gray");
   }
@@ -141,8 +124,7 @@ let teachersSwiper = new Swiper(".teachers__swiper", {
 // ==========revievs===========
 let reviewsSwiper = new Swiper(".reviews__swiper", {
   speed: 2600,
-  // slidesPerView: 3,
-  // loop: true,
+  
   autoplay: {
     delay: 5500,
     disableOnInteraction: false,
@@ -168,6 +150,6 @@ let reviewsSwiper = new Swiper(".reviews__swiper", {
 });
 
 wow = new WOW({
-  offset: 200, // default
+  offset: 200, 
 });
 wow.init();
