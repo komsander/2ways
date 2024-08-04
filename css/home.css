@@ -264,7 +264,7 @@ body._lock {
 }
 
 .hero-container {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   width: 100%;
   display: flex;
@@ -332,6 +332,7 @@ body._lock {
   bottom: 0px;
 }
 .about__title {
+  position: relative;
   font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
   color: var(--accent-color);
   margin-bottom: 40px;
@@ -1040,6 +1041,20 @@ body._lock {
     height: 150px;
   }
 }
+@media (max-width: 900px) and (orientation: landscape) {
+  .hero__btn {
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 22px;
+    z-index: 3;
+  }
+  .hero__title {
+    font-size: 36px;
+  }
+  .hero__subtitle {
+    font-size: 30px;
+  }
+}
 @media (max-width: 800px) {
   .about__slide:nth-child(even) .about__card {
     background-color: var(--order-color2);
@@ -1197,10 +1212,10 @@ body._lock {
     display: none;
   }
   .hero__image-1 {
-    left: 45px;
+    display: none;
   }
   .hero__image-2 {
-    right: 50px;
+    display: none;
   }
   .hero__btn {
     max-width: 250px;
