@@ -19,6 +19,7 @@ if (burger && menu) {
 // ========about===========
 let swiper = new Swiper(".about__swiper", {
   speed: 2500,
+  loop: true,
   spaceBetween: 460,
   autoplay: {
     delay: 5500,
@@ -28,23 +29,23 @@ let swiper = new Swiper(".about__swiper", {
     nextEl: ".about__arrow-right",
     prevEl: ".about__arrow-left",
   },
-  breakpoints: {
-    300: {
-      slidesPerView: 6,
-      direction: "vertical",
-      enabled: false,
-    },
-    480: {
-      // loop: true,
+  // breakpoints: {
+  //   300: {
+  //     slidesPerView: 6,
+  //     direction: "vertical",
+  //     enabled: false,
+  //   },
+  //   480: {
+  //     // loop: true,
 
-      slidesPerView: 1,
-      direction: "horizontal",
-      enabled: true,
-    },
-    800: {
-      loop: true,
-    },
-  },
+  //     slidesPerView: 1,
+  //     direction: "horizontal",
+  //     enabled: true,
+  //   },
+  //   800: {
+  //     loop: true,
+  //   },
+  // },
 });
 
 // =========courses============
