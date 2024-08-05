@@ -7,12 +7,12 @@ if (burger && menu) {
   burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     menu.classList.toggle("active");
-    body.classList.toggle("lock");
+    // body.classList.toggle("lock");
   });
   menuLink.addEventListener("click", () => {
     burger.classList.toggle("active");
     menu.classList.toggle("active");
-    body.classList.toggle("lock");
+    // body.classList.toggle("lock");
   });
 }
 
