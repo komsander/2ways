@@ -31,59 +31,7 @@ let swiper = new Swiper(".about__swiper", {
   },
 });
 
-// =========courses============
 
-const course = document.querySelector(".courses");
-const courseTitle = document.querySelector(".courses__title");
-const courseMask = document.querySelector(".courses__mask");
-const courseRight = document.querySelector(".courses__right");
-
-// FadeIn
-const fadeIn = (el, timeout, display) => {
-  el.style.opacity = 0;
-  el.style.display = display || "block";
-  el.style.transition = `opacity ${timeout}ms`;
-  setTimeout(() => {
-    el.style.opacity = 1;
-  }, 10);
-};
-
-// FadeOut
-const fadeOut = (el, timeout) => {
-  el.style.opacity = 1;
-  el.style.transition = `opacity ${timeout}ms`;
-  el.style.opacity = 0;
-
-  setTimeout(() => {
-    el.style.display = "none";
-  }, timeout);
-};
-
-course.addEventListener("mousemove", (event) => {
-  // ширина экрана
-  let viewportWidth = window.innerWidth;
-
-  // координата X относительно элемента, на котором произошло событие
-  const elementX = event.offsetX;
-
-  if (elementX > viewportWidth / 2 + 100) {
-   
-    fadeIn(courseRight, 700);
-    courseTitle.classList.add("color-gray");
-  } else if (elementX < viewportWidth / 2 - 100) {
-   
-    fadeOut(courseMask, 700);
-    courseTitle.classList.remove("color-gray");
-
-   
-  } else {
-    
-    fadeIn(courseMask, 700);
-   
-    fadeOut(courseRight, 700);
-    courseTitle.classList.remove("color-gray");
-  }
-});
 
 // =========teachers=======
 
