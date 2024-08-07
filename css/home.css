@@ -255,8 +255,6 @@
 }
 .courses__text {
   text-align: justify;
-  -webkit-hyphens: auto;
-          hyphens: auto;
   text-indent: 30px;
   line-height: 1.3;
 }
@@ -283,7 +281,7 @@
 
 .courses-content {
   display: flex;
-  gap: 5%;
+  gap: 9%;
   margin-bottom: 50px;
 }
 .courses-content__title {
@@ -866,6 +864,12 @@
   }
   .courses__english, .courses__france {
     width: calc(100% - 30px);
+  }
+  .courses__france {
+    order: 2;
+  }
+  .courses__english {
+    order: 3;
   }
   .courses-content {
     justify-content: center;
