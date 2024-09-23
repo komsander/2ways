@@ -230,6 +230,7 @@ body {
   color: var(--accent-color);
   font-size: 28px;
   line-height: 1.3;
+  text-transform: uppercase;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto 60px;
@@ -267,6 +268,10 @@ body {
 .classes-english__flex_card-down1.blue {
   background-color: var(--order-color2);
 }
+.classes-english__flex_card-down1.gray {
+  background-color: #c4c4c4;
+  color: white;
+}
 .classes-english__flex_card-down2 {
   position: absolute;
   top: 0;
@@ -302,6 +307,9 @@ body {
 .classes-english__flex_card-content.yellow {
   background-color: var(--order-color1);
 }
+.classes-english__flex_card-content.orange {
+  background-color: var(--accent-color);
+}
 .classes-english__flex_card:hover .classes-english__flex_card-content {
   box-shadow: inset 0 4px 30px rgba(0, 0, 0, 0.0666666667);
 }
@@ -317,6 +325,7 @@ body {
      object-fit: contain;
   width: 75px;
   height: 75px;
+  color: #fff;
 }
 .classes-english__flex_card-title {
   margin-bottom: 10px;
