@@ -354,10 +354,29 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.classes-english__flex_tab-description.holidays {
+  line-height: 1.9;
+  padding-bottom: 40px;
+}
+.classes-english__flex_tab-description.holidays ~ p {
+  text-align: center;
+  padding-bottom: 15px;
+}
 .classes-english__flex_tab-description span {
   color: var(--accent-color);
   font-weight: 900;
   margin-right: 30px;
+}
+
+#classes-english__tab-4 .classes-english__tab-subtitle {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  line-height: 1.9;
+}
+
+#classes-english__tab-4 .classes-english__tab-subtitle span {
+  color: var(--accent-color);
+  font-size: 38px;
 }
 
 .submit {
@@ -649,6 +668,14 @@ body {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+}
+.classes-france__flex_tab-description.holidays {
+  line-height: 1.9;
+  padding-bottom: 40px;
+}
+.classes-france__flex_tab-description.holidays ~ p {
+  text-align: center;
+  padding-bottom: 15px;
 }
 .classes-france__flex_tab-description span {
   color: var(--accent-color);
