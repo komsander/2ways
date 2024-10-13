@@ -104,9 +104,9 @@ wow.init();
 
 // ==== classes  -  табы 
 
-const tabLink = document.querySelectorAll('.classes-english__tab-link');
-const tabText = document.querySelectorAll('.classes-english__tab-box');
-const tabTextFirst = document.querySelector('.classes-english__tab-box');
+const tabLink = document.querySelectorAll('.classes-lang__tab-link');
+const tabText = document.querySelectorAll('.classes-lang__tab-box');
+const tabTextFirst = document.querySelector('.classes-lang__tab-box');
 for(let item of tabLink) {
   tabTextFirst.classList.remove('hidden');
   
@@ -122,19 +122,3 @@ for(let item of tabLink) {
 }
 
 
-const tabLinkF = document.querySelectorAll('.classes-france__tab-link');
-const tabTextF = document.querySelectorAll('.classes-france__tab-box');
-const tabTextFirstF = document.querySelector('.classes-france__tab-box');
-for(let item of tabLinkF) {
-  tabTextFirstF.classList.remove('hidden');
-
-  item.addEventListener('click', function(){
-
-    for(let element of tabTextF){
-      element.classList.add('hidden');
-    }
-
-    const content = document.querySelector('#' + item.dataset.tab );
-    content.classList.remove('hidden');
-  });
-}
