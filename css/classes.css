@@ -30,7 +30,9 @@ body {
 }
 @media (max-width: 1200px) {
   .menu__list li:hover > .submenu {
-    transform: translate3d(150px, -65px, 0);
+    background-color: var(--accent-color);
+    transform: translate3d(0px, -65px, 0);
+    z-index: 999;
   }
 }
 

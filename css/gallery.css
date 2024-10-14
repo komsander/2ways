@@ -9,6 +9,22 @@
   background-repeat: no-repeat;
 }
 
+.gallery-hero__title {
+  padding-top: 10%;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  font-family: var(--font-order-title);
+  font-size: clamp(3.125rem, 2.185rem + 4.7vw, 8rem);
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 2;
+  word-spacing: 20px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.0666666667);
+}
+
 .hero-container {
   min-height: 100vh;
   position: relative;

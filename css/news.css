@@ -18,7 +18,7 @@
 }
 
 .news-hero__title {
-  margin-bottom: 20px;
+  padding-top: 10%;
   position: relative;
   text-align: center;
   font-family: var(--font-order-title);
@@ -26,7 +26,8 @@
   font-weight: 900;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #ccc;
+  color: #fff;
   z-index: 2;
   word-spacing: 20px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.0666666667);
 }/*# sourceMappingURL=news.css.map */
